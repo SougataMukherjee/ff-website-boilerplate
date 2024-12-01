@@ -1,0 +1,78 @@
+.ff-homepage-offering-brand-section {
+  height: 304px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  .ff-homepage-offering-brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ff-homepage-offering-brand-main-text {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .ff-homepage-offering-brand-sub-text {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .ff-homepage-offering-brand-icons {
+    display: flex;
+    gap: 15px;
+    .img {
+      width: 240px;
+      height: 53px;
+    }
+  }
+}
+.ff-homepage-offering-skills {
+  .ff-homepage-offering-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ff-homepage-offering-heading-text {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .ff-homepage-offering-sub-text {
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .ff-homepage-offering-training {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ff-homepage-offering-training-progress {
+      height: 250px;
+    }
+    .ff-homepage-offering-training-section {
+      width: 1120px;
+      height: 461px;
+      border-radius: 24px;
+      background-color: #ffffff;
+      .ff-homepage-offering-training-section-heading {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 30px;
+      }
+      .ff-homepage-offering-training-section-sub {
+        font-size: 16px;
+        font-weight: 500;
+        color: #848f9c;
+        padding-left: 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+$breakpoints: (
+  "sm": 680px,
+  "md": 768px,
+  "lg": 1024px,
+);
+/* below the breakpoint of 640px */
+@mixin sm {
+  @media (max-width: map-get($breakpoints,"sm")) {
+    @content;
+  }
+}
+/* below the breakpoint of 768px */
+@mixin md {
+  @media (max-width: map-get($breakpoints,"md")) {
+    @content;
+  }
+}
+/* below the breakpoint of 1024px */
+@mixin lg {
+  @media (max-width: map-get($breakpoints,"lg")) {
+    @content;
+  }
+}
+@mixin breakpoint($bp: 0) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+// use it inside class
+// .class1{
+// @include sm{
+// }
+// }
+// .class2{
+// @include breakpoint(1200px){
+// }
+// }
+
+//use if each mixin in scss
