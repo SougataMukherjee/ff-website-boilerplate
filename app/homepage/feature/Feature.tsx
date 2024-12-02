@@ -3,18 +3,23 @@ import React from "react";
 import { useGlobalContext } from "@/Context/GlobalContext";
 import "./Feature.scss";
 import Image from "next/image";
-// import { Button } from "pixel-react";
+import { Button } from "pixel-react";
+
 const Feature = () => {
   const { user } = useGlobalContext();
   console.log("user: ", user);
+
   return (
     <section className="ff-homepage-feature-wrapper">
-      <div className="ff-homepage-feature-text-section">
-        <div className="ff-homepage-feature-main-text">
-          <span>Experience 4x faster test automation</span>
-          <span> using FireFlink AI</span>
-        </div>
-        <div className="ff-homepage-feature-sub-text">
+      <article className="ff-homepage-feature-text-section">
+        <header className="ff-homepage-feature-main-text font-semibold-900">
+          <span className="font-bold">
+            Experience 4x faster test automation
+          </span>
+          <span>using FireFlink AI</span>
+        </header>
+
+        <aside className="ff-homepage-feature-sub-text font-regular-500">
           <span>
             A heavily AI-infused test automation platform, that allows testers
             to develop automation scripts
@@ -23,20 +28,20 @@ const Feature = () => {
             faster than ever! Experience speed, accuracy, and enhanced ROI with
             FireFlink!
           </span>
-        </div>
-        <div>
-          <button className="ff-homepage-feature-button">
-            Schedule a free demo
-          </button>
-          {/* <Button
-            variant="primary"
-            label="select"
-            size="medium"
+        </aside>
+
+        <section>
+          <Button
+            className="ff-homepage-feature-button"
+            variant="secondary"
+            label="Schedule a free demo"
+            size="large"
             onClick={() => console.log("click")}
-          /> */}
-        </div>
-      </div>
-      <div className="ff-homepage-feature-img-section">
+          />
+        </section>
+      </article>
+
+      <figure className="ff-homepage-feature-img-section">
         <Image
           src={"/images/homepage_feature.svg"}
           width={1156}
@@ -44,7 +49,7 @@ const Feature = () => {
           alt="homepage-feature-image"
           className="ff-homepage-feature-img"
         />
-      </div>
+      </figure>
     </section>
   );
 };

@@ -16,30 +16,32 @@
     color: #fff;
     height: 750px;
     clip-path: ellipse(130% 100% at 50% 0%);
+
     .ff-homepage-feature-main-text {
-      font-size: 48px;
-      font-weight: 600;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       span {
         display: block;
       }
+
       @include sm {
-        font-size: 38px;
-        font-weight: 600;
+        @extend .font-semibold-800 !optional;
       }
     }
+
     .ff-homepage-feature-sub-text {
-      font-size: 18px;
-      font-weight: 400;
       display: flex;
       flex-direction: column;
       align-items: center;
+
       span {
         display: block;
       }
     }
+
+    // Button section
     .ff-homepage-feature-button {
       width: 160px;
       height: 34px;
@@ -47,8 +49,11 @@
       border: none;
       background-color: #fff;
       color: #29102d;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
+
   .ff-homepage-feature-img-section {
     .ff-homepage-feature-img {
       position: absolute;
