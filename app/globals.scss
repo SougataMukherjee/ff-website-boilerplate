@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after,
+html,
+body {
+  font-family: "Poppins" !important;
+}
+
+@mixin font-style($weight, $size) {
+  font-weight: $weight !important;
+  font-size: $size !important;
+}
+
+.highlight-text {
+  color: #71347b;
+}
