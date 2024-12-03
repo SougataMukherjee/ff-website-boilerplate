@@ -3,7 +3,7 @@
 First, install the required packages:
 
 ```bash
-npm i pixel-react sass --legacy-peer-deps
+npm i pixel-react sass react-reveal clsx formik yup --legacy-peer-deps
 
 ```
 
